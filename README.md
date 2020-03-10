@@ -1,2 +1,2 @@
 # BoecRomashka.github.io
-[Experiment](https://github.com/BoecRomashka/BoecRomashka.github.io/dist)
+[Experiment](https://boecromashka.github.io/dist/)
