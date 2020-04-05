@@ -1173,6 +1173,7 @@ template {
 }
 
 .contact__textarea textarea {
+    resize: none;
     width: 100%;
     border: 0;
     border-bottom: 1px solid #555;
