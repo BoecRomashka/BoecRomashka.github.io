@@ -579,9 +579,10 @@ h1, h2, h3 {
         position: absolute;
         top: 100%;
         right: 0;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: all 0.5s;
         z-index: 1;
+        overflow: hidden;
     }
 
     .nav.show {
