@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Restourant</title>
+</head>
+<body>
+
+<!-- Sprite-->
+<svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 96.124 96.123">
+        <g>
+            <path
+                d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                            c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                            c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                            c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+        </g>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                            C480.224,136.96,497.728,118.496,512,97.248z" />
+        </g>
+    </symbol>
+
+    <symbol id="linkedin" viewBox="0 0 510 510">
+        <g>
+            <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+                             M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
+                            S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
+                            V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" />
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 511 511.9">
+        <path
+            d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+        <path
+            d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+        <path
+            d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+    </symbol>
+
+    <symbol id="play" viewBox="0 0 511.999 511.999">
+        <g>
+            <path d="M443.86,196.919L141.46,10.514C119.582-2.955,93.131-3.515,70.702,9.016c-22.429,12.529-35.819,35.35-35.819,61.041
+                v371.112c0,38.846,31.3,70.619,69.77,70.829c0.105,0,0.21,0.001,0.313,0.001c12.022-0.001,24.55-3.769,36.251-10.909
+                c9.413-5.743,12.388-18.029,6.645-27.441c-5.743-9.414-18.031-12.388-27.441-6.645c-5.473,3.338-10.818,5.065-15.553,5.064
+                c-14.515-0.079-30.056-12.513-30.056-30.898V70.058c0-11.021,5.744-20.808,15.364-26.183c9.621-5.375,20.966-5.135,30.339,0.636
+                l302.401,186.405c9.089,5.596,14.29,14.927,14.268,25.601c-0.022,10.673-5.261,19.983-14.4,25.56L204.147,415.945
+                c-9.404,5.758-12.36,18.049-6.602,27.452c5.757,9.404,18.048,12.36,27.452,6.602l218.611-133.852
+                c20.931-12.769,33.457-35.029,33.507-59.55C477.165,232.079,464.729,209.767,443.86,196.919z" />
+        </g>
+    </symbol>
+
+    <symbol id="subscribe" viewBox="0 -39 512.00011 512">
+        <path
+            d="m504.09375 11.859375c-6.253906-7.648437-15.621094-11.859375-26.378906-11.859375-5.847656 0-12.042969 1.230469-18.410156 3.664062l-433.398438 165.441407c-23 8.777343-26.097656 21.949219-25.8984375 29.019531s4.0390625 20.046875 27.4999995 27.511719c.140626.042969.28125.085937.421876.125l89.898437 25.726562 48.617187 139.023438c6.628907 18.953125 21.507813 30.726562 38.835938 30.726562 10.925781 0 21.671875-4.578125 31.078125-13.234375l55.605469-51.199218 80.652344 64.941406c.007812.007812.019531.011718.027343.019531l.765625.617187c.070313.054688.144532.113282.214844.167969 8.964844 6.953125 18.75 10.625 28.308594 10.628907h.003906c18.675781 0 33.546875-13.824219 37.878906-35.214844l71.011719-350.640625c2.851563-14.074219.460937-26.667969-6.734375-35.464844zm-356.191406 234.742187 173.441406-88.605468-107.996094 114.753906c-1.769531 1.878906-3.023437 4.179688-3.640625 6.683594l-20.824219 84.351562zm68.132812 139.332032c-.71875.660156-1.441406 1.25-2.164062 1.792968l19.320312-78.25 35.144532 28.300782zm265.390625-344.566406-71.011719 350.644531c-.683593 3.355469-2.867187 11.164062-8.480468 11.164062-2.773438 0-6.257813-1.511719-9.824219-4.257812l-91.390625-73.585938c-.011719-.011719-.027344-.023437-.042969-.03125l-54.378906-43.789062 156.175781-165.949219c5-5.3125 5.453125-13.449219 1.074219-19.285156-4.382813-5.835938-12.324219-7.671875-18.820313-4.351563l-256.867187 131.226563-91.121094-26.070313 433.265625-165.390625c3.660156-1.398437 6.214844-1.691406 7.710938-1.691406.917968 0 2.550781.109375 3.15625.855469.796875.972656 1.8125 4.289062.554687 10.511719zm0 0" />
+    </symbol>
+</svg>
+<!-- //Sprite-->
+
+
+<!--////////////// Header -->
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a class="header__logo-link" href="#" data-scroll="#intro">Victorya</a>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About Us</a>
+                <a class="nav__link" href="#" data-scroll="#menu">Menu</a>
+                <a class="nav__link" href="#" data-scroll="#recipes">Recipes</a>
+                <a class="nav__link" href="#" data-scroll="#contact">Contact Us</a>
+            </nav>
+            <div class="header__burger" id="navToggle">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--////////////// Intro -->
+
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__header">Good food choices are good investments</h1>
+            <p class="intro__text">There is a powerful need for symbolism, and that means the architecture must have
+                something that appeals to the human heart.</p>
+            <div class="intro__buttons">
+                <a href="#" class="button  intro__button">Order Now</a>
+                <span>Watch our story</span>
+                <a href="#" class="intro__play-button  play-button" data-modal="#first-video">
+                    <svg class="intro__icon">
+                        <use xlink:href="#play"></use>
+                    </svg></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--////////////// About -->
+
+<section class="about" id="about">
+    <div class="container">
+
+        <article class="about__block">
+            <div class="about__pic">
+                <img class="about__pic--bordered" src="assets/img/top/1.jpg" alt="food picture" class="about__pic-item">
+            </div>
+            <div class="about__desc">
+                <h2 class="about__header">The best comfort food will
+                    always be greens, cornbread, and fried chicken.</h2>
+                <p class="about__text">Lorem ipsum dolor sit amet, consetetur sadipscing
+                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+                <a href="" class="button  about__button">Know More About Us</a>
+            </div>
+        </article>
+        <article class="about__block">
+            <div class="about__pic  about__pic-block">
+                <img src="assets/img/top/2.jpg" alt="food picture" class="about__pic-item">
+                <img src="assets/img/top/3.jpg" alt="food picture" class="about__pic-item">
+                <img src="assets/img/top/4.jpg" alt="food picture" class="about__pic-item">
+                <img src="assets/img/top/5.jpg" alt="food picture" class="about__pic-item">
+            </div>
+            <div class="about__desc">
+                <h2 class="about__header">The best comfort food will
+                    always be greens, cornbread, and fried chicken.</h2>
+                <p class="about__text">Lorem ipsum dolor sit amet, consetetur sadipscing
+                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+                <a href="" class="button  about__button">Know More About Us</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<div class="container">
+    <section class="story">
+        <div class="story__inner">
+            <h2 class="story__header">When a man's stomach is full it makes no difference
+                whether he is rich or poor.</h2>
+            <p class="story__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna.</p>
+            <div class="story__button">
+                <a href="#" class="story__play-button  play-button" data-modal="#second-video">
+                    <svg class="story__icon">
+                        <use xlink:href="#play"></use>
+                    </svg></a>
+                <span>Watch our story</span>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!--////////////// Explore -->
+
+<div class="container">
+    <section class="explore" id="menu">
+        <div class="explore__top">
+            <h2 class="explore__top-header">Explore Our Foods</h2>
+            <p class="explore__top-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna.
+            </p>
+        </div>
+        <div class="explore__bottom">
+            <figure class="explore__item">
+                <img src="assets/img/explore/1.jpg" alt="Dish picture" class="explore__item-pic">
+                <figcaption class="item__desc">
+                    <h3 class="item__header">
+                        <span class="item__header-name">Ham Sandwich</span>
+                        <span class="item__header-price">$10.50</span>
+                    </h3>
+                    <p class="item__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="explore__item">
+                <img src="assets/img/explore/2.jpg" alt="Dish picture" class="explore__item-pic">
+                <figcaption class="item__desc">
+                    <h3 class="item__header">
+                        <span class="item__header-name">Ham Sandwich</span>
+                        <span class="item__header-price">$10.50</span>
+                    </h3>
+                    <p class="item__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="explore__item">
+                <img src="assets/img/explore/3.jpg" alt="Dish picture" class="explore__item-pic">
+                <figcaption class="item__desc">
+                    <h3 class="item__header">
+                        <span class="item__header-name">Ham Sandwich</span>
+                        <span class="item__header-price">$10.50</span>
+                    </h3>
+                    <p class="item__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="explore__item">
+                <img src="assets/img/explore/4.jpg" alt="Dish picture" class="explore__item-pic">
+                <figcaption class="item__desc">
+                    <h3 class="item__header">
+                        <span class="item__header-name">Ham Sandwich</span>
+                        <span class="item__header-price">$10.50</span>
+                    </h3>
+                    <p class="item__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="explore__item">
+                <img src="assets/img/explore/5.jpg" alt="Dish picture" class="explore__item-pic">
+                <figcaption class="item__desc">
+                    <h3 class="item__header">
+                        <span class="item__header-name">Ham Sandwich</span>
+                        <span class="item__header-price">$10.50</span>
+                    </h3>
+                    <p class="item__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="explore__item">
+                <img src="assets/img/explore/6.jpg" alt="Dish picture" class="explore__item-pic">
+                <figcaption class="item__desc">
+                    <h3 class="item__header">
+                        <span class="item__header-name">Ham Sandwich</span>
+                        <span class="item__header-price">$10.50</span>
+                    </h3>
+                    <p class="item__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+        <a href="" class="button  explore__button">Explore all food</a>
+    </section>
+</div>
+
+
+<!--////////////// Recipes -->
+<div class="container">
+    <section class="recipes" id="recipes">
+        <h2 class="recipes__header">Our Popular Recipes</h2>
+        <div class="recipes__inner" id="recipes-slider">
+            <div class="slider__item">
+                <div class="recipes__item">
+                    <img class="recipes__img" src="assets/img/recipes/1.jpg" alt="dish picture">
+                    <h3 class="recipes__title">Crinkle Top Brownies</h3>
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="recipes__item">
+                    <img class="recipes__img" src="assets/img/recipes/2.jpg" alt="dish picture">
+                    <h3 class="recipes__title">Crinkle Top Brownies</h3>
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="recipes__item">
+                    <img class="recipes__img" src="assets/img/recipes/3.jpg" alt="dish picture">
+                    <h3 class="recipes__title">Crinkle Top Brownies</h3>
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="recipes__item">
+                    <img class="recipes__img" src="assets/img/recipes/4.jpg" alt="dish picture">
+                    <h3 class="recipes__title">Crinkle Top Brownies</h3>
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="recipes__item">
+                    <img class="recipes__img" src="assets/img/recipes/2.jpg" alt="dish picture">
+                    <h3 class="recipes__title">Crinkle Top Brownies</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--////////////// Contact -->
+<div class="container">
+    <section class="contact" id="contact">
+        <form action="#" class="contact__form">
+            <h2 class="contact__header">Want to get the latest Updates?</h2>
+            <div class="contact__input">
+                <input type="text">
+                <label>Your email address:</label>
+            </div>
+            <button class="contact__input-button  button">Subscribe
+                <svg class="contact__icon">
+                    <use xlink:href="#subscribe"></use>
+                </svg>
+            </button>
+        </form>
+    </section>
+</div>
+
+<!--////////////// Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copyright">Copyright &copy; Arifur Rahman, 2019, BoecRomashka, 2020. All rights reserved.</div>
+            <div class="footer__links">
+                <a href="#" class="link__item">
+                    <svg class="link__icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="link__item">
+                    <svg class="link__icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+                <a href="#" class="link__item">
+                    <svg class="link__icon">
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
+                </a>
+                <a href="#" class="link__item">
+                    <svg class="link__icon">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal" id="first-video">
+    <div class="modal__item">
+        <button class="modal__close" type="button" data-close>&CircleTimes;</button>
+        <div class="video">
+            <a class="video__link" href="https://youtu.be/PZ4pctQMdg4">
+                <picture>
+                    <!-- <source srcset="https://i.ytimg.com/vi_webp/PZ4pctQMdg4/maxresdefault.webp" type="image/webp"> -->
+                    <img class="video__media" src="https://i.ytimg.com/vi/PZ4pctQMdg4/maxresdefault.jpg" alt="Food - TV Advertisment">
+                </picture>
+            </a>
+            <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="second-video">
+    <div class="modal__item">
+        <button class="modal__close" type="button" data-close>&CircleTimes;</button>
+        <div class="video">
+            <a class="video__link" href="https://youtu.be/tJlzIJaokVY">
+                <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/tJlzIJaokVY/maxresdefault.webp" type="image/webp">
+                    <img class="video__media" src="https://i.ytimg.com/vi/tJlzIJaokVY/maxresdefault.jpg" alt="Food - TV Advertisment">
+                </picture>
+            </a>
+            <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+            </button>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="assets/js/app.min.js" defer></script>
+
+</body>
+</html>
