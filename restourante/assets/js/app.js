@@ -3022,7 +3022,7 @@ let introHeight = intro.innerHeight();
 let scrollPos = $(window).scrollTop();
 
 
-  // Fixed Header
+  //////////// Fixed Header
   checkScroll(scrollPos, introHeight);
 
   $(window).on('scroll resize', function() {
@@ -3040,7 +3040,7 @@ let scrollPos = $(window).scrollTop();
     }
   }
 
-  // Smooth scroll
+  ////////////// Smooth scroll
   $('[data-scroll]').on('click', function(event) {
     event.preventDefault();
 
@@ -3054,7 +3054,7 @@ let scrollPos = $(window).scrollTop();
     }, 700);
   });
 
-  // Nav Toggle
+  //////////// Nav Toggle
 
 
   navToggle.on('click', function(event) {
@@ -3064,7 +3064,7 @@ let scrollPos = $(window).scrollTop();
   });
 
 
-// Modals
+/////////////////// Modals
 
 const modalCall = $("[data-modal]");
 const modalClose = $("[data-close]");
@@ -3079,6 +3079,7 @@ modalCall.on("click", function(event) {
   $("body").addClass('no-scroll');
 });
 
+
 modalClose.on("click", function(event) {
   event.preventDefault();
 
@@ -3090,7 +3091,7 @@ modalClose.on("click", function(event) {
 });
 
 
-// Videos
+////////////// Youtube Videos
 
 function findVideos() {
 	let videos = document.querySelectorAll('.video');
@@ -3146,27 +3147,27 @@ function generateURL(id) {
 findVideos();
 
 
-// Slider
+//////////// Slider
 $('#recipes-slider').slick({
   centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 2,
+  slidesToScroll: 3,
+  slidesToShow: 3,
   responsive: [
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
+        arrows: false,
+        slidesToScroll: 1,
+        slidesToShow: 1
       }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        arrows: false,
+        slidesToScroll: 1,
         slidesToShow: 1
       }
     }
