@@ -4,3 +4,5 @@
 [Experiment Two](https://boecromashka.github.io/sweden/)
 
 [Built from template page](https://boecromashka.github.io/CoTwo/)
+
+[Second template page](https://boecromashka.github.io/restourante/)
