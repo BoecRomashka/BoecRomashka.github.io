@@ -829,20 +829,19 @@ h1, h2, h3, h4 {
     }
 }
 
-.header__burger.active::before {
+/* .header__burger.active::before {
     transform: rotate(45deg);
     top: 8px;
 }
-
 .header__burger.active::after {
     transform: rotate(-45deg);
     bottom: 8px;
 }
-
-.header__burger.active span {
-    transform: scale(0);
+.header__burger.active {
+    span {
+        transform: scale(0);
 }
-
+    } */
 .intro {
     background: url("../img/top/bg1.jpg") center/cover;
 }
@@ -1261,7 +1260,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 767px) {
     .slick-slider .slider__item {
-        padding: 0;
+        padding: 0 10px;
     }
 }
 

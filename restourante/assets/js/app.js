@@ -3013,6 +3013,19 @@
 
 $(function() {
 
+/*   function onYouTubePlayerAPIReady() {
+    player1 = new YT.Player('Youtube1', {
+        events: {'onReady': onPlayerReady}
+    });
+    player2 = new YT.Player('Youtube2', {
+        events: {'onReady': onPlayerReady}
+    });
+}
+function onPlayerReady(event) {
+    document.getElementById("pauseYoutube1").addEventListener("click", function() {player1.pauseVideo();});
+    document.getElementById("pauseYoutube2").addEventListener("click", function() {player2.pauseVideo();});
+} */
+
 
 let nav = $('#nav');
 let navToggle = $('#navToggle');
@@ -3086,14 +3099,17 @@ modalClose.on("click", function(event) {
   let $this = $(this);
   let modalParent = $this.parents('.modal');
 
+
+
   modalParent.removeClass('show-modal');
   $("body").removeClass('no-scroll');
+
 });
 
 
-////////////// Youtube Videos
+   ////////////// Youtube Videos
 
-function findVideos() {
+/* function findVideos() {
 	let videos = document.querySelectorAll('.video');
 
 	for (let i = 0; i < videos.length; i++) {
@@ -3144,12 +3160,12 @@ function generateURL(id) {
 	return 'https://www.youtube.com/embed/' + id + query;
 }
 
-findVideos();
+findVideos(); */
 
 
 //////////// Slider
 $('#recipes-slider').slick({
-  centerMode: true,
+  // centerMode: true,
   slidesToScroll: 3,
   slidesToShow: 3,
   responsive: [
