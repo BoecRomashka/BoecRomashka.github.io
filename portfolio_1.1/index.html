@@ -124,7 +124,10 @@
 
 
     <script>
-        VANTA.BIRDS({
+          function resizeForm(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+        if(width > 1024){
+          VANTA.BIRDS({
             el: "#first-screen",
             mouseControls: true,
             touchControls: true,
@@ -135,6 +138,11 @@
             color1: 0x2273e6,
             color2: 0x238deb
         })
+        }   
+    }
+    // window.onresize = resizeForm;
+    resizeForm();
+
     </script>
 </body>
 
