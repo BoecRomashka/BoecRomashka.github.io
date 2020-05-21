@@ -11,4 +11,6 @@
 
 [Fourth template page](https://boecromashka.github.io/beautysalon/)
 
-[Portfolio Page](https://boecromashka.github.io/portfolio/)
+[Portfolio v1.0 Page](https://boecromashka.github.io/portfolio_1.0/)
+
+[Portfolio v1.1 Page](https://boecromashka.github.io/portfolio_1.1/)
