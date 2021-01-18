@@ -534,6 +534,13 @@ h6 {
     margin: 172px 0 0;
 }
 
+@media (min-width: 992px) {
+    .main {
+        max-width: 900px;
+        margin: 172px auto 0;
+    }
+}
+
 .main_title {
     font-size: 38px;
     line-height: 42px;
@@ -726,9 +733,9 @@ h6 {
 
 @media (min-width: 992px) {
     .review_text {
-        padding: 0 250px 0 532px;
+        padding: 0 0 0 532px;
         text-align: left;
-        max-width: unset;
+        max-width: 900px;
     }
 }
 
@@ -909,6 +916,12 @@ h6 {
 
 @media (min-width: 992px) {
     .for-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .for-desctop {
         display: none;
     }
 }
