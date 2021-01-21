@@ -764,6 +764,14 @@ h6 {
     }
 }
 
+@media (max-width: 980px) {
+    .review {
+        width: 100%;
+        max-width: 347px;
+        margin: 0 auto;
+    }
+}
+
 .review:hover {
     background: #b57910;
 }
