@@ -590,6 +590,13 @@ h6 {
 
 .comparison_header {
     display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1140px) {
+    .comparison_header {
+        justify-content: start;
+    }
 }
 
 .comparison_header-title {
@@ -625,6 +632,13 @@ h6 {
 
 .comparison_row {
     display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1140px) {
+    .comparison_row {
+        justify-content: start;
+    }
 }
 
 .comparison_row-title {
