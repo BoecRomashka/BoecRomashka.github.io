@@ -593,7 +593,7 @@ h6 {
     justify-content: center;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_header {
         justify-content: start;
     }
@@ -607,7 +607,7 @@ h6 {
     color: #303446;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_header-title {
         min-width: 330px;
         max-width: 330px;
@@ -622,7 +622,7 @@ h6 {
     border-left: 2px solid #f5f8fb;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_header-card {
         padding: 5px 0 30px 25px;
         min-width: 219px;
@@ -635,7 +635,7 @@ h6 {
     justify-content: center;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_row {
         justify-content: start;
     }
@@ -647,7 +647,7 @@ h6 {
     max-width: 300px;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_row-title {
         padding: 35px 45px 35px 0;
         min-width: 330px;
@@ -656,7 +656,7 @@ h6 {
 }
 
 .comparison_row-item {
-    padding: 35px 0 35px 25px;
+    padding: 35px 0 35px 5px;
     min-width: 180px;
     max-width: 180px;
     font: 400 16px/22px "Open Sans", sans-serif;
@@ -664,12 +664,9 @@ h6 {
     border-left: 2px solid #f5f8fb;
 }
 
-.comparison_row-item img {
-    display: block;
-}
-
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_row-item {
+        padding: 35px 0 35px 25px;
         min-width: 219px;
         max-width: 219px;
     }
@@ -680,7 +677,7 @@ h6 {
     max-width: 540px;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1260px) {
     .comparison_row-item-wide {
         min-width: 633px;
         max-width: 633px;
