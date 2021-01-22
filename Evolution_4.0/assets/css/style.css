@@ -601,14 +601,16 @@ h6 {
 
 .comparison_header-title {
     align-self: center;
-    max-width: 300px;
-    min-width: 300px;
+    padding: 0 0 0 10px;
+    max-width: 275px;
+    min-width: 275px;
     font: 700 26px/33px "Open Sans", sans-serif;
     color: #303446;
 }
 
 @media (min-width: 1260px) {
     .comparison_header-title {
+        padding: 0;
         min-width: 330px;
         max-width: 330px;
     }
@@ -642,9 +644,9 @@ h6 {
 }
 
 .comparison_row-title {
-    padding: 35px 15px 35px 0;
-    min-width: 300px;
-    max-width: 300px;
+    padding: 35px 10px;
+    min-width: 275px;
+    max-width: 275px;
 }
 
 @media (min-width: 1260px) {
