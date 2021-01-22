@@ -510,10 +510,6 @@ h6 {
     padding: 0 15px;
 }
 
-.base_dblock {
-    display: block;
-}
-
 .base_bg-purple {
     background-color: #3023ae;
 }
@@ -528,6 +524,18 @@ h6 {
 
 .base_bg-green {
     background-color: #017e79;
+}
+
+@media (min-width: 981px) {
+    .for-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .for-desctop {
+        display: none;
+    }
 }
 
 .main {
@@ -599,7 +607,192 @@ h6 {
     min-width: 219px;
     max-width: 219px;
     padding: 5px 0 30px 25px;
-    background-color: #fafbfb;
+    background: #fafbfb;
+    border-left: 2px solid #f5f8fb;
+}
+
+@media (max-width: 1199px) {
+    .comparison_header-card {
+        min-width: 180px;
+        max-width: 180px;
+        padding: 5px 0 30px 5px;
+    }
+}
+
+.comparison_row {
+    display: flex;
+}
+
+.comparison_row-title {
+    padding: 35px 45px 35px 0;
+    min-width: 330px;
+    max-width: 330px;
+}
+
+@media (max-width: 1199px) {
+    .comparison_row-title {
+        padding: 35px 15px 35px 0;
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+
+.comparison_row-item {
+    padding: 35px 0 35px 25px;
+    min-width: 219px;
+    max-width: 219px;
+    border-left: 2px solid #f5f8fb;
+}
+
+.comparison_row-item img {
+    display: block;
+}
+
+@media (max-width: 1199px) {
+    .comparison_row-item {
+        min-width: 180px;
+        max-width: 180px;
+    }
+}
+
+.comparison_row-item-wide {
+    min-width: 633px;
+    max-width: 633px;
+}
+
+@media (max-width: 1199px) {
+    .comparison_row-item-wide {
+        min-width: 540px;
+        max-width: 540px;
+    }
+}
+
+.comparison_card {
+    padding: 0 10px;
+    margin: 0 0 93px;
+}
+
+.comparison_card-header,
+.comparison_header-card-name {
+    margin: 5px 0 10px;
+    font: 400 20px/36px "Open Sans", sans-serif;
+    letter-spacing: -0.4px;
+}
+
+.comparison_card-price,
+.comparison_header-card-price {
+    font: 400 24px/100% "Open Sans", sans-serif;
+    letter-spacing: -0.57px;
+}
+
+.comparison_card-btn,
+.comparison_header-card-btn {
+    display: block;
+    font: 700 16px/15px "PT Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 12.5px 0;
+    margin: 15px 0 0;
+    min-width: 130px;
+    max-width: 150px;
+    border-radius: 5px;
+    color: #fff;
+    transition: opacity 0.2s linear;
+}
+
+.comparison_card-btn:hover,
+  .comparison_header-card-btn:hover {
+    opacity: 0.85;
+}
+
+@media (min-width: 767px) {
+    .comparison_card-btn {
+        margin: 15px auto 0;
+    }
+}
+
+.property_wrap {
+    position: relative;
+}
+
+.comparison_property {
+    letter-spacing: -0.4px;
+    position: absolute;
+}
+
+.comparison_property:nth-child(2) {
+    top: 335px;
+}
+
+.comparison_property:nth-child(3) {
+    top: 440px;
+}
+
+.comparison_property:nth-child(4) {
+    top: 680px;
+}
+
+.comparison_property:nth-child(5) {
+    top: 785px;
+}
+
+.comparison_property:nth-child(6) {
+    top: 875px;
+}
+
+.comparison_value {
+    padding: 0 15px 0 0;
+    height: 110px;
+    color: #616161;
+    letter-spacing: -0.4px;
+    font: 400 16px/22px "Open Sans", sans-serif;
+}
+
+.comparison_value-high {
+    height: 240px;
+}
+
+.comparison {
+    margin: 50px 0 0;
+}
+
+@media (min-width: 980px) {
+    .comparison {
+        margin: 44px 0 0;
+    }
+}
+
+@media (min-width: 767px) {
+    .comparison_card > * {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.comparison_header {
+    display: flex;
+}
+
+.comparison_header-title {
+    align-self: center;
+    min-width: 330px;
+    max-width: 330px;
+    font: 700 26px/33px "Open Sans", sans-serif;
+    color: #303446;
+}
+
+@media (max-width: 1199px) {
+    .comparison_header-title {
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+
+.comparison_header-card {
+    min-width: 219px;
+    max-width: 219px;
+    padding: 5px 0 30px 25px;
+    background: #fafbfb;
     border-left: 2px solid #f5f8fb;
 }
 
@@ -756,19 +949,19 @@ h6 {
     transition: all 0.2s linear;
 }
 
-@media (min-width: 980px) {
-    .review {
-        flex-direction: row;
-        margin: 125px 0 0;
-        padding: 40px 140px;
-    }
-}
-
 @media (max-width: 980px) {
     .review {
         width: 100%;
         max-width: 347px;
         margin: 0 auto;
+    }
+}
+
+@media (min-width: 980px) {
+    .review {
+        flex-direction: row;
+        margin: 125px 0 0;
+        padding: 40px 140px;
     }
 }
 
@@ -805,8 +998,7 @@ h6 {
     content: "";
     width: 12px;
     height: 12px;
-    background-image: url("../img/triangle.png");
-    background-repeat: no-repeat;
+    background: url("../img/triangle.png") no-repeat;
 }
 
 .install {
@@ -869,7 +1061,10 @@ h6 {
 }
 
 .install_content-btn {
-    padding: 22px 41px;
+    display: block;
+    min-width: 310px;
+    max-width: 350px;
+    padding: 22px 0;
     font: 700 24px/120% "PT Sans", sans-serif;
     text-align: center;
     text-decoration: none;
@@ -881,16 +1076,4 @@ h6 {
 
 .install_content-btn:hover {
     opacity: 0.85;
-}
-
-@media (min-width: 981px) {
-    .for-mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 980px) {
-    .for-desctop {
-        display: none;
-    }
 }
