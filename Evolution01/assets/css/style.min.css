@@ -31,11 +31,21 @@ img {
   display: block; }
 
 .base_cantainer {
-  padding: 0 22px;
   margin: 0 auto; }
+  @media (max-width: 480px) {
+    .base_cantainer {
+      padding: 0 0 0 22px; } }
   @media (min-width: 1920px) {
     .base_cantainer {
-      margin: 0 0 0 200px; } }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 550px 0 0; } }
+  @media (min-width: 3000px) {
+    .base_cantainer {
+      display: block;
+      padding: 0; } }
 
 .base_cantainer-flex {
   padding: 0 20px; }
@@ -76,13 +86,16 @@ img {
   font: 700 28px/30px "Open Sans", sans-serif; }
   @media (min-width: 680px) {
     .base_title {
-      font: 700 68px/72px "Open Sans", sans-serif; } }
+      font: 700 45px/50px "Open Sans", sans-serif; } }
   @media (min-width: 1024px) {
     .base_title {
       font: 700 68px/72px "Open Sans", sans-serif; } }
 
 .base_text {
   margin: 32px 0 24px; }
+  @media (max-width: 480px) {
+    .base_text {
+      padding: 0 22px 0 0; } }
 
 @media (min-width: 680px) {
   .base_text-width {
@@ -332,3 +345,105 @@ img {
   @media (min-width: 1920px) {
     .sphere_img {
       margin: -640px 0 0; } }
+  @media (min-width: 3000px) {
+    .sphere_img {
+      margin: -640px auto 0; } }
+
+.microphone {
+  margin: 40px 0 0 0;
+  background: linear-gradient(0deg, #f5c753, #f5c753), #fca102;
+  padding: 95px 0; }
+  @media (min-width: 680px) {
+    .microphone {
+      padding: 160px 0 190px;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .microphone {
+      padding: 160px 0 160px; } }
+  @media (min-width: 1024px) {
+    .microphone {
+      padding: 200px 0 170px; } }
+
+.microphone_img {
+  margin: 0 0 0 auto; }
+  @media (min-width: 680px) {
+    .microphone_img {
+      margin: 0 auto; } }
+
+@media (min-width: 680px) {
+  .microphone_info {
+    padding: 0 55px; } }
+
+@media (min-width: 768px) {
+  .microphone_info {
+    padding: 0 100px; } }
+
+.kits {
+  margin: 72px auto;
+  padding: 0 10px; }
+  @media (min-width: 680px) {
+    .kits {
+      text-align: center;
+      padding: 0 28px;
+      margin: 160px auto 110px; } }
+  @media (min-width: 1920px) {
+    .kits {
+      width: 100%;
+      max-width: 1140px;
+      margin: 160px 0 110px;
+      padding: 0 0 0 200px; } }
+  @media (min-width: 2500px) {
+    .kits {
+      max-width: 1540px;
+      padding: 0 0 0 450px; } }
+  @media (min-width: 2800px) {
+    .kits {
+      max-width: 1740px;
+      padding: 0 0 0 650px; } }
+  @media (min-width: 3000px) {
+    .kits {
+      max-width: 1140px;
+      padding: 0;
+      margin: 160px auto 110px; } }
+
+.kits_subtitle {
+  font: 700 28px/30px "Open Sans", sans-serif; }
+  @media (min-width: 680px) {
+    .kits_subtitle {
+      font: 700 30px/33px "Open Sans", sans-serif; } }
+  @media (min-width: 1024px) {
+    .kits_subtitle {
+      font: 700 40px/48px "Open Sans", sans-serif; } }
+
+.kits_cards {
+  margin: 32px 0 0; }
+  @media (min-width: 680px) {
+    .kits_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+
+.kits_cards-item {
+  text-align: left;
+  margin: 0 0 55px; }
+  @media (min-width: 680px) {
+    .kits_cards-item {
+      width: 48%; } }
+  @media (min-width: 1024px) {
+    .kits_cards-item {
+      width: 33%; } }
+
+.kits_cards-item-title {
+  font: 700 24px/30px "Open Sans", sans-serif;
+  margin: 23px 0 0; }
+  @media (min-width: 680px) {
+    .kits_cards-item-title {
+      font: 700 28px/30px "Open Sans", sans-serif; } }
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  .kits_cards-item-title,
+  .kits_cards-item-text {
+    width: 300px; } }
+
+.kits_cards-item-text {
+  margin: 32px 0 16px; }
