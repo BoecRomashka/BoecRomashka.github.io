@@ -30,25 +30,47 @@ img {
   max-width: 100%;
   display: block; }
 
-.base_cantainer-one {
+.base_cantainer {
+  padding: 0 22px;
+  margin: 0 auto; }
+  @media (min-width: 1920px) {
+    .base_cantainer {
+      margin: 0 0 0 200px; } }
+
+.base_cantainer-flex {
   padding: 0 20px; }
   @media (min-width: 680px) {
-    .base_cantainer-one {
+    .base_cantainer-flex {
       padding: 0 86px 0 134px;
       display: flex;
       flex-wrap: wrap; } }
   @media (min-width: 768px) {
-    .base_cantainer-one {
+    .base_cantainer-flex {
       padding: 0 131px 0 177px; } }
   @media (min-width: 1024px) {
-    .base_cantainer-one {
+    .base_cantainer-flex {
       padding: 0 22px; } }
   @media (min-width: 1280px) {
-    .base_cantainer-one {
+    .base_cantainer-flex {
       padding: 0 44px; } }
   @media (min-width: 1920px) {
-    .base_cantainer-one {
+    .base_cantainer-flex {
       padding: 0 0 0 180px; } }
+  @media (min-width: 2400px) {
+    .base_cantainer-flex {
+      padding: 0 0 0 430px; } }
+  @media (min-width: 2500px) {
+    .base_cantainer-flex {
+      padding: 0 0 0 490px; } }
+  @media (min-width: 2700px) {
+    .base_cantainer-flex {
+      padding: 0 0 0 625px; } }
+  @media (min-width: 2850px) {
+    .base_cantainer-flex {
+      padding: 0 0 0 730px; } }
+  @media (min-width: 3000px) {
+    .base_cantainer-flex {
+      padding: 0 0 0 630px; } }
 
 .base_title {
   font: 700 28px/30px "Open Sans", sans-serif; }
@@ -61,6 +83,10 @@ img {
 
 .base_text {
   margin: 32px 0 24px; }
+
+@media (min-width: 680px) {
+  .base_text-width {
+    width: 550px; } }
 
 .base_link {
   font: 600 20px/24px "Open Sans", sans-serif;
@@ -104,61 +130,81 @@ img {
     .base_btn-loan {
       min-width: 170px; } }
 
-.main_header {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
+.main_container {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 1920px) {
+    .main_container {
+      justify-content: space-between;
+      align-items: flex-end; } }
+  @media (min-width: 3000px) {
+    .main_container {
+      justify-content: center; } }
+
+.main_container-header {
   padding: 130px 13px 140px 15px;
   text-align: center;
   font: 700 28px/28px "Open Sans", sans-serif; }
   @media (min-width: 680px) {
-    .main_header {
+    .main_container-header {
       font: 700 45px/50px "Open Sans", sans-serif;
       padding: 234px 0 95px; } }
   @media (min-width: 768px) {
-    .main_header {
+    .main_container-header {
       padding: 234px 0 120px; } }
   @media (min-width: 1024px) {
-    .main_header {
+    .main_container-header {
       font: 700 68px/72px "Open Sans", sans-serif;
       padding: 210px 0 110px; } }
   @media (min-width: 1280px) {
-    .main_header {
+    .main_container-header {
       padding: 210px 0 125px; } }
   @media (min-width: 1920px) {
-    .main_header {
+    .main_container-header {
       padding: 211px 0; } }
 
-.main_header-girl,
-.main_header-boy {
+.main_container-girl,
+.main_container-man,
+.main_container-man-wide {
   display: none; }
-  @media (min-width: 1920px) {
-    .main_header-girl,
-    .main_header-boy {
-      display: block;
-      position: absolute;
-      bottom: 0; } }
 
-.main_header-girl {
-  left: 0; }
+@media (min-width: 1920px) {
+  .main_container-girl,
+  .main_container-man {
+    display: block; } }
 
-.main_header-boy {
-  right: 0; }
+@media (min-width: 3000px) {
+  .main_container-man {
+    display: none; } }
+
+@media (min-width: 3000px) {
+  .main_container-girl {
+    padding: 0 100px 0 0; } }
+
+@media (min-width: 3000px) {
+  .main_container-man-wide {
+    display: block;
+    padding: 0 0 0 100px; } }
 
 .main_evosound-item {
   background: #fafafa; }
   @media (min-width: 1280px) {
     .main_evosound-item {
       display: flex;
-      min-width: 1280px;
       justify-content: space-between; } }
+  @media (min-width: 2350px) {
+    .main_evosound-item {
+      justify-content: flex-end; } }
 
 .main_evosound-item-img {
   margin: 0 0 0 auto; }
   @media (min-width: 1280px) {
     .main_evosound-item-img {
       margin: 0;
-      height: 855px; } }
+      height: 800px; } }
+  @media (min-width: 3000px) {
+    .main_evosound-item-img {
+      height: 865px; } }
 
 .main_evosound-item-about {
   padding: 0 22px; }
@@ -174,14 +220,17 @@ img {
   @media (min-width: 1280px) {
     .main_evosound-item-about {
       width: 50%;
-      padding: 155px 95px 0 44px; } }
+      padding: 155px 95px 0 44px;
+      order: -1; } }
   @media (min-width: 1920px) {
     .main_evosound-item-about {
-      width: 40%;
       padding: 155px 0 0 180px; } }
-  @media (min-width: 1280px) {
+  @media (min-width: 2400px) {
     .main_evosound-item-about {
-      order: -1; } }
+      width: 40%; } }
+  @media (min-width: 3000px) {
+    .main_evosound-item-about {
+      padding: 155px 0 0 390px; } }
 
 .main_evosound-sing {
   background: #fafafa;
@@ -191,6 +240,9 @@ img {
     .main_evosound-sing {
       padding: 218px 0 0;
       text-align: left; } }
+  @media (min-width: 1024px) {
+    .main_evosound-sing {
+      padding: 0; } }
 
 .main_evosound-sing-title {
   font: 700 24px/30px "Open Sans", sans-serif; }
@@ -244,3 +296,39 @@ img {
   @media (min-width: 1024px) {
     .main_evosound-sing-img {
       margin: 100px 0 0; } }
+
+.sphere {
+  margin: 170px 0 0; }
+  @media (min-width: 680px) {
+    .sphere {
+      margin: 253px 0 0; } }
+  @media (min-width: 768px) {
+    .sphere {
+      margin: 327px 0 0; } }
+  @media (min-width: 1024px) {
+    .sphere {
+      margin: 385px 0 0; } }
+
+@media (min-width: 680px) {
+  .sphere_info {
+    text-align: center; } }
+
+.sphere_img {
+  position: relative;
+  z-index: -1;
+  margin: 90px auto 0; }
+  @media (min-width: 768px) {
+    .sphere_img {
+      margin: -140px auto 0; } }
+  @media (min-width: 768px) {
+    .sphere_img {
+      margin: -140px auto 0; } }
+  @media (min-width: 1024px) {
+    .sphere_img {
+      margin: -240px auto 0; } }
+  @media (min-width: 1280px) {
+    .sphere_img {
+      margin: -640px auto 0; } }
+  @media (min-width: 1920px) {
+    .sphere_img {
+      margin: -640px 0 0; } }
