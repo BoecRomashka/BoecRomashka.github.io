@@ -15,8 +15,6 @@
 
 [Portfolio v1.1 Page](https://boecromashka.github.io/portfolio_1.1/)
 
-[Evolution v.2.0](https://boecromashka.github.io/Evolution_2.0/)
+[Evo v.1.0](https://boecromashka.github.io/evo01/)
 
-[Evolution v.3.0](https://boecromashka.github.io/Evolution_3.0/)
-
-[Evolution v.4.0](https://boecromashka.github.io/Evolution_4.0/)
+[Evolution v.1.0](https://boecromashka.github.io/Evolution01/)
