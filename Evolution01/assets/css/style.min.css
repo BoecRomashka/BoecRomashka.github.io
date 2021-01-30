@@ -388,19 +388,21 @@ img {
       margin: 160px auto 110px; } }
   @media (min-width: 1280px) {
     .kits {
+      padding: 0;
       width: 100%;
       max-width: 1140px; } }
   @media (min-width: 1920px) {
     .kits {
       margin: 160px 0 110px;
-      padding: 0 0 0 200px; } }
+      padding: 0 0 0 200px;
+      max-width: 1340px; } }
   @media (min-width: 2500px) {
     .kits {
-      max-width: 1540px;
-      padding: 0 0 0 450px; } }
+      padding: 0 0 0 450px;
+      max-width: 1590px; } }
   @media (min-width: 2800px) {
     .kits {
-      max-width: 1740px;
+      max-width: 1790px;
       padding: 0 0 0 650px; } }
   @media (min-width: 3000px) {
     .kits {
@@ -424,14 +426,19 @@ img {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around; } }
+  @media (min-width: 1280px) {
+    .kits_cards {
+      justify-content: space-between; } }
 
 .kits_cards-item {
   text-align: left;
   margin: 0 0 55px; }
   @media (min-width: 680px) {
     .kits_cards-item {
-      width: 48%;
       width: 300px; } }
+  @media (min-width: 680px) {
+    .kits_cards-item {
+      width: 360px; } }
 
 .kits_cards-item-title {
   font: 700 24px/30px "Open Sans", sans-serif;
