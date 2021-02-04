@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+body {
+    background-color: mediumturquoise;
+}
+
+.valentine {
+    background: linear-gradient(90deg, #f7e9e1 50%, #ffcdbf 50%);
+}
+
+.valentine_content {
+    width: 100%;
+    max-width: 1004px;
+    margin: 0 auto;
+    padding: 78px 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+    .valentine_content {
+        max-width: 760px;
+        padding: 54px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .valentine_content {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.valentine_content-offer,
+.valentine_content-img {
+    width: 33.333%;
+}
+
+.valentine_content-offer {
+    padding: 30px 0 0;
+}
+
+.valentine_content-offer:last-child {
+    text-align: right;
+}
+
+@media (max-width: 1050px) {
+    .valentine_content-offer {
+        padding: 45px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .valentine_content-offer {
+        width: 50%;
+    }
+
+    .valentine_content-offer:first-child {
+        padding: 0 0 0 15px;
+    }
+
+    .valentine_content-offer:last-child {
+        padding: 0 15px 0 0;
+    }
+}
+
+.valentine_content-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 1050px) {
+    .valentine_content-img {
+        width: 310px;
+    }
+}
+
+@media (max-width: 768px) {
+    .valentine_content-img {
+        -ms-flex-order: -1;
+        order: -1;
+        width: 100%;
+    }
+
+    .valentine_content-img img {
+        width: 240px;
+    }
+}
+
+.valentine_content-offer-text {
+    font: 400 36px/40px "Open Sans", sans-serif;
+    color: #202020;
+}
+
+@media (max-width: 1050px) {
+    .valentine_content-offer-text {
+        font: 400 30px/36px "Open Sans", sans-serif;
+    }
+}
+
+@media (max-width: 768px) {
+    .valentine_content-offer-text {
+        font: 400 24px/28px "Open Sans", sans-serif;
+    }
+}
+
+@media (max-width: 360px) {
+    .valentine_content-offer-text {
+        font: 400 20px/24px "Open Sans", sans-serif;
+    }
+}
+
+.valentine_content-offer-link {
+    display: block;
+    margin: 16px 0 0;
+    font: 700 30px/36px "Open Sans", sans-serif;
+    color: #202020;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.valentine_content-offer-link:hover {
+    opacity: 0.7;
+}
+
+.valentine_terms {
+    position: relative;
+    z-index: 11;
+    margin: -80px 0 0;
+    background: url("../images/group.png") repeat center bottom 208px;
+}
+
+@media (max-width: 1050px) {
+    .valentine_terms {
+        margin: -50px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .valentine_terms {
+        margin: -30px 0 0;
+    }
+}
+
+.valentine_terms-text {
+    text-align: center;
+    padding: 140px 0 35px;
+    font: 400 12px/16px "Open Sans", sans-serif;
+    color: #979797;
+}
+
+@media (max-width: 768px) {
+    .valentine_terms-text {
+        margin: 0 auto;
+        max-width: 300px;
+        padding: 140px 0 20px;
+    }
+}
