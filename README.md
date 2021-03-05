@@ -15,8 +15,8 @@
 
 [Portfolio v1.1 Page](https://boecromashka.github.io/portfolio_1.1/)
 
-[Evo v.1.0](https://boecromashka.github.io/evo01/)
+[Karaoke01](https://boecromashka.github.io/karaoke01/)
 
-[Evolution v.1.0](https://boecromashka.github.io/Evolution01/)
+[Karaoke02](https://boecromashka.github.io/karaoke02/)
 
 [Valentine](https://boecromashka.github.io/Valentine/)
