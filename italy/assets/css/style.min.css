@@ -1,0 +1,1342 @@
+/* CSS-RESET */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+a {
+  cursor: pointer; }
+
+img {
+  width: 100%; }
+
+/* FONTS */
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: Cormorant;
+  src: url(../fonts/Cormorant-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: Cormorant;
+  src: url(../fonts/Cormorant-BoldItalic.woff2) format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: Cormorant;
+  src: url(../fonts/Cormorant-Italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+/* FLEXIBLE for MOBILE I put this here, the original goes below */
+html {
+  font-size: 0.20833333vw;
+  scroll-behavior: smooth; }
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 1px; } }
+
+/* FLEXIBLE */
+html {
+  font-size: 0.0625vw;
+  scroll-behavior: smooth; }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 1px; } }
+
+/* FLEXIBLE for MOBILE */
+/*MODIFICATOR*/
+.flex {
+  display: flex; }
+
+.flex_wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex_wrap_jc-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.flex_wrap_jc-sb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.flex_col_ai-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.flex_col_jc-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.flex_ai-c {
+  display: flex;
+  align-items: center; }
+
+.flex_jc-sb {
+  display: flex;
+  justify-content: space-between; }
+
+.flex_jc-c {
+  display: flex;
+  justify-content: center; }
+
+.flex_jc-c_ai-c {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex_jc-sb_ai-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.ta-c {
+  text-align: center; }
+
+.ta-r {
+  text-align: right; }
+
+.upper {
+  text-transform: uppercase; }
+
+.color-red {
+  color: #db7b7d; }
+
+.color-white {
+  color: #ffffff; }
+
+/* BASE STYLE */
+.base_container {
+  width: 1500rem;
+  margin: 0 auto;
+  position: relative; }
+
+.base_btn {
+  display: block;
+  font: 700 16rem/55rem Gilroy, sans-serif;
+  height: 55rem;
+  width: 307rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%);
+  transition: all linear 0.2s; }
+
+.base_btn:hover {
+  box-shadow: 0rem 9rem 22rem rgba(245, 178, 141, 0.37); }
+
+.base_link-garden::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: thin solid #009fb0;
+  transition: all linear 0.2s; }
+
+.base_link-garden:hover {
+  color: #009fb0; }
+
+.base_link-garden:hover::after {
+  width: 25rem; }
+
+.base_link-stone::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: thin solid #00afcc;
+  transition: all linear 0.2s; }
+
+.base_link-stone:hover {
+  color: #00afcc; }
+
+.base_link-stone:hover::after {
+  width: 25rem; }
+
+.base_link-wood:hover {
+  color: #f2bb82; }
+
+.base_link-wood::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: thin solid #f2bb82;
+  transition: all linear 0.2s; }
+
+.base_link-wood:hover::after {
+  width: 25rem; }
+
+.base_accordeon-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100rem;
+  padding: 0 40rem 0;
+  background: #fff;
+  cursor: pointer; }
+
+.base_accordeon-btn img {
+  padding: 0 0 20rem;
+  transition: all 0.2s ease-in-out; }
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 80rem;
+  background: #ffffff;
+  box-shadow: 0 5rem 5rem #fff; }
+
+.header_nav {
+  width: 375rem; }
+
+.header_nav-logo {
+  width: 57rem;
+  margin: 0 30rem 0 0; }
+
+.header_nav-link {
+  position: relative;
+  color: #4d4d4d;
+  font: 600 16rem/19rem Gilroy, sans-serif;
+  transition: all linear 0.2s; }
+
+.header_options {
+  width: 635rem; }
+
+.header_options-phones {
+  position: relative; }
+
+.header_options-phones::before {
+  content: "";
+  position: absolute;
+  left: -35rem;
+  top: -6rem;
+  width: 30rem;
+  height: 30rem;
+  background: url("../images/elements/phone_icon.png") no-repeat center/contain; }
+
+.header_options-phone {
+  font: 700 16rem/18.56rem Gilroy, sans-serif;
+  color: #4d4d4d;
+  padding: 0 16rem 0 0;
+  border-right: thin solid #dcdcdc; }
+
+.header_options-phone:last-child {
+  padding: 0 0 0 16rem;
+  border: none; }
+
+.header_options-phone-code {
+  font-weight: 400; }
+
+.header_options-lang {
+  padding: 14rem 30rem;
+  background: #ffffff;
+  border-radius: 50rem;
+  box-shadow: 0 0 13rem rgba(0, 0, 0, 0.05); }
+
+.header_options-lang-item {
+  font: 700 14rem/17rem Gilroy, sans-serif;
+  color: #4d4d4d;
+  transition: all linear 0.2s; }
+
+.header_options-lang-item:hover,
+.header_options-lang-item.active {
+  color: #00e6c5; }
+
+.header_options-lang-item:not(:last-child) {
+  padding: 0 18rem 0 0; }
+
+.header_options-menu-text {
+  font: 700 14rem/17rem Gilroy, sans-serif;
+  color: #009fb0;
+  margin: 0 11rem 0 0; }
+
+.header_options-menu-burger {
+  position: relative;
+  width: 30rem;
+  border-bottom: 3rem solid #009fb0; }
+
+.header_options-menu-burger::before,
+.header_options-menu-burger::after {
+  content: "";
+  position: absolute;
+  width: 30rem;
+  left: 0;
+  border-bottom: 3rem solid #009fb0; }
+
+.header_options-menu-burger::before {
+  top: -5rem; }
+
+.header_options-menu-burger::after {
+  bottom: -8rem; }
+
+.main {
+  margin: 80rem 0 0;
+  overflow: hidden;
+  background: url("../images/bg-logo.png") no-repeat left/32%, #f8f8f8; }
+
+.main_header {
+  padding: 125rem 0 130rem; }
+
+.main_header-logo {
+  width: 381rem; }
+
+.main_header-text {
+  padding: 90rem 0 0;
+  margin: 0 0 0 -135rem; }
+
+.main_header-letter {
+  width: 65rem;
+  padding: 0 8rem 0 0; }
+
+.main_header-letter:nth-child(2) {
+  margin: 0 0 0 -43rem; }
+
+.main_header-letter:nth-child(3) {
+  margin: 0 0 0 35rem; }
+
+.main_header-letter:nth-child(3),
+.main_header-letter:nth-child(6) {
+  width: 57rem; }
+
+.main_header-subtitle {
+  font: 300 20rem/23rem Gilroy, sans-serif;
+  color: #000;
+  padding: 18rem 0 0; }
+
+.main_header-title {
+  width: 520rem;
+  font: 400 30rem/43rem Gilroy, sans-serif;
+  color: #7b7b7b;
+  padding: 42rem 0 0 40rem; }
+
+.main_header-circle {
+  margin: -700rem -555rem 0 0;
+  position: relative;
+  width: 1280rem;
+  height: 1280rem; }
+
+.main_header-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 1280rem;
+  height: 1280rem;
+  border-radius: 50%;
+  background: url("../images/besedka.jpg") no-repeat center/cover; }
+
+.main_header-out {
+  position: absolute;
+  top: -90rem;
+  left: -90rem;
+  width: 1468rem;
+  height: 1468rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.02);
+  animation: orbit1 20s linear infinite; }
+
+.main_header-out::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  top: 520rem;
+  width: 51rem;
+  height: 51rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.main_header-in {
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1280rem;
+  height: 1280rem;
+  border-radius: 50%;
+  animation: orbit2 20s linear infinite; }
+
+.main_header-in::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  left: -28rem;
+  top: 730rem;
+  width: 86rem;
+  height: 86rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.main_header-in::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  left: 234rem;
+  top: 130rem;
+  width: 16rem;
+  height: 16rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+@keyframes orbit1 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: 0 0; }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+    transform-origin: 0 0; } }
+
+.services {
+  background: #f8f8f8;
+  border-radius: 50% / 0 0 20% 20%;
+  padding: 80rem 0 143rem;
+  margin: 0 0 105rem; }
+
+.services_items {
+  margin: 0 0 80rem; }
+
+.services_item {
+  width: 397rem;
+  margin: 0 30rem 0 0; }
+
+.services_item-img {
+  margin: 0 0 22rem; }
+
+.services_item:first-child .services_item-img {
+  border-radius: 90rem 0 0 0;
+  overflow: hidden; }
+
+.services_item:last-child .services_item-img {
+  border-radius: 0 90rem 0 0;
+  overflow: hidden; }
+
+.services_item-title {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 27rem;
+  flex: 1 1 auto; }
+
+.services_item .base_btn {
+  margin: 0 0 16rem; }
+
+.services_item-link {
+  font: 700 16rem/19rem Gilroy, sans-serif;
+  padding: 0 0 16rem;
+  position: relative; }
+
+.services_item-link::before {
+  content: "";
+  position: absolute;
+  width: 13rem;
+  height: 8rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../images/elements/arrow.svg") no-repeat center/cover; }
+
+.services_advantages {
+  padding: 0 125rem; }
+
+.services_advantages-title {
+  font: 400 50rem/61rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 54rem; }
+
+.services_advantages-text {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f;
+  position: relative;
+  width: 610rem;
+  height: 100rem;
+  padding: 0 96rem 0 116rem;
+  margin: 0 0 30rem;
+  background: #ffffff;
+  border-radius: 52rem 0 0 0;
+  border-right: medium solid;
+  border-image: linear-gradient(to bottom, #cf6477, #ffc592) 1 100% 0 0; }
+
+.services_advantages-text:nth-child(odd) {
+  margin: 0 30rem 30rem 0; }
+
+.services_advantages-text::before {
+  content: "";
+  position: absolute;
+  left: 26rem;
+  top: 25rem;
+  width: 50rem;
+  height: 50rem;
+  background: url("../images/elements/check.svg") no-repeat center/contain; }
+
+.floor {
+  margin: 0 0 123rem; }
+
+.floor_header,
+.floor_benefits-title {
+  font: 700 50rem/61rem Cormorant, sans-serif; }
+
+.floor_benefits-title {
+  color: #2f2f2f; }
+
+.floor_header {
+  margin: 0 0 60rem; }
+
+.floor_benefits {
+  margin: 0 0 82rem; }
+
+.floor_benefits-circle {
+  margin: 40rem 165rem 0 0;
+  position: relative;
+  width: 461rem;
+  height: 461rem; }
+
+.floor_benefits-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 22;
+  width: 461rem;
+  height: 461rem;
+  border-radius: 50%;
+  background: url("../images/image.jpg") no-repeat center/cover; }
+
+.floor_benefits-out {
+  position: absolute;
+  z-index: 21;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 638rem;
+  height: 638rem;
+  border-radius: 50%;
+  border: thin solid #e3e3e3;
+  animation: orbit3 20s linear infinite; }
+
+.floor_benefits-out::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  right: -7rem;
+  top: 390rem;
+  width: 45rem;
+  height: 45rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.floor_benefits-out::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  right: 94rem;
+  top: 65rem;
+  width: 29rem;
+  height: 29rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.floor_benefits-in {
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 576rem;
+  height: 576rem;
+  border-radius: 50%;
+  background: #f9f9f9;
+  animation: orbit4 20s linear infinite; }
+
+.floor_benefits-in::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  top: 165rem;
+  width: 47rem;
+  height: 47rem;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+@keyframes orbit3 {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: 0 0; }
+  to {
+    transform: rotate(-360deg) translate(-50%, -50%);
+    transform-origin: 0 0; } }
+
+@keyframes orbit4 {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: 0 0; }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+    transform-origin: 0 0; } }
+
+.floor_benefits-text {
+  width: 830rem; }
+
+.floor_benefits-title {
+  margin: 0 0 12rem; }
+
+.floor_benefits-subtitle {
+  font: 400 22rem/30rem Gilroy, sans-serif;
+  margin: 0 0 46rem;
+  color: #7b7b7b; }
+
+.floor_benefits-list {
+  font: 700 18rem/29rem Gilroy, sans-serif;
+  margin: 0 0 33rem;
+  color: #7b7b7b; }
+
+.floor_benefits-list li {
+  position: relative;
+  padding: 0 0 0 33rem; }
+
+.floor_benefits-list li:not(:last-child) {
+  padding: 0 0 15rem 33rem; }
+
+.floor_benefits-list li::before {
+  position: absolute;
+  content: "";
+  top: 9rem;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.floor_benefits-services {
+  font: 700 20rem/31rem Gilroy, sans-serif;
+  color: #4d4d4d; }
+
+.floor_benefits-result {
+  font: italic 700 50rem/61rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 118rem auto 45rem;
+  width: 890rem; }
+
+.floor_benefits-bunner {
+  width: 1250rem;
+  margin: 0 auto 82rem;
+  padding: 62rem 0 69rem;
+  background: url("../images/bg-logo.png") no-repeat right/contain, linear-gradient(180deg, #f9f9f9 0%, rgba(249, 249, 249, 0.19) 85.65%); }
+
+.floor_benefits-bunner-text {
+  position: relative;
+  font: italic 400 30rem/36rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  width: 512rem;
+  margin: 0 134rem 0 0;
+  padding: 0 0 26rem;
+  border-bottom: thin solid;
+  border-image: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.floor_benefits-bunner-text::after {
+  position: absolute;
+  content: "";
+  right: 10rem;
+  bottom: 0;
+  width: 190rem;
+  border: thin solid;
+  border-image: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%) 0 0 100%; }
+
+.floor_samples {
+  border-bottom: thin solid #db7b7d;
+  margin: 0 0 120rem; }
+
+.floor_samples-header {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 40rem; }
+
+.floor_samples-title {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 16rem; }
+
+.floor_samples-item {
+  margin: 0 0 25rem; }
+
+.floor_samples-item:not(:last-child) {
+  margin: 0 20rem 25rem 0; }
+
+.floor_samples-supradeck {
+  margin: 0 0 22rem; }
+
+.floor_samples-supradeck-img {
+  width: 230rem;
+  border-radius: 7rem;
+  overflow: hidden;
+  margin: 0 0 5rem; }
+
+.floor_samples-name {
+  font: 400 18rem/29rem Gilroy, sans-serif;
+  color: #7b7b7b; }
+
+.floor_samples-hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out; }
+
+.floor_samples-hidden-img {
+  width: 221rem;
+  border-radius: 7rem;
+  overflow: hidden;
+  margin: 0 0 5rem; }
+
+.floor_sertificates {
+  margin: 0 0 80rem; }
+
+.floor_sertificates-text-wrap {
+  width: 845rem; }
+
+.floor_sertificates-header {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 45rem; }
+
+.floor_sertificates-list-item-wrap {
+  height: 80rem;
+  width: 610rem;
+  border-right: medium solid;
+  border-image: linear-gradient(to bottom, #cf6477, #ffc592) 1 100% 0 0;
+  background: #fafafa;
+  transition: all 0.2s linear; }
+
+.floor_sertificates-list-item-wrap:hover {
+  background: #ffffff; }
+
+.floor_sertificates-list-link {
+  width: inherit;
+  position: relative;
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #7b7b7b;
+  padding: 24rem 72rem 24rem 94rem;
+  transition: all 0.2s linear; }
+
+.floor_sertificates-list-item-wrap:not(:last-child) {
+  margin: 0 0 20rem; }
+
+.floor_sertificates-list-link:hover {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  color: #4d4d4d; }
+
+.floor_sertificates-list-link::before {
+  position: absolute;
+  content: "";
+  width: 37rem;
+  height: 45rem;
+  top: 50%;
+  left: 30rem;
+  transform: translateY(-50%);
+  background: url(../images/elements/pdf.svg) no-repeat center/contain;
+  transition: all 0.2s linear; }
+
+.floor_sertificates-list-link:hover::before {
+  background: url(../images/elements/pdf-hover.svg) no-repeat center/contain; }
+
+.floor_sertificates-img {
+  width: 970rem; }
+
+.floor_standarts {
+  margin: 0 0 70rem; }
+
+.floor_standarts-item {
+  width: 470rem;
+  height: 140rem;
+  box-shadow: 0 4rem 50rem rgba(0, 0, 0, 0.05);
+  margin: 0 30rem 30rem 0; }
+
+.floor_standarts-item:last-child {
+  margin: 0 0 30rem; }
+
+.floor_standarts-img {
+  width: 80rem;
+  margin: 0 40rem; }
+
+.floor_standarts-text {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f; }
+
+.floor_standarts + .base_btn {
+  margin: 0 auto; }
+
+.pergolas {
+  margin: 0 0 112rem; }
+
+.pergolas_about {
+  background: url("../images/pergolas01.jpg") center/cover; }
+
+.pergolas_about-content {
+  width: 740rem;
+  padding: 75rem 0 230rem;
+  margin: 43rem 0 0; }
+
+.pergolas_header,
+.pergolas_about-title {
+  font: 700 50rem/61rem Cormorant, sans-serif; }
+
+.pergolas_about-title {
+  margin: 0 0 17rem; }
+
+.pergolas_about-text {
+  font: 400 22rem/30rem Gilroy, sans-serif;
+  margin: 0 0 57rem; }
+
+.pergolas_about-list-item {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f;
+  width: inherit;
+  padding: 18rem 0 18rem 60rem;
+  margin: 0 0 7rem;
+  background: #fafafa;
+  overflow: hidden; }
+
+.pergolas_about-list-item:first-child {
+  border-radius: 30rem 0 0; }
+
+.pergolas_about-list-item:last-child {
+  border-radius: 0 0 30rem; }
+
+.pergolas_about-list-item:before {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  top: 50%;
+  left: 25rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.pergolas_background {
+  background: #f8f8f8;
+  border-radius: 50% / 0 0 20% 20%; }
+
+.pergolas_types {
+  position: absolute;
+  top: -140rem;
+  left: 0;
+  padding: 77rem 75rem 68rem 108rem;
+  background: url("../images/pergolas02.jpg") no-repeat center/cover;
+  box-shadow: 0 4rem 50rem rgba(0, 0, 0, 0.05);
+  border-radius: 40rem; }
+
+.pergolas_types-title {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  margin: 0 85rem 0 0; }
+
+.pergolas_types-item {
+  position: relative; }
+
+.pergolas_types-item:not(:last-child) {
+  margin: 0 30rem 0 0; }
+
+.pergolas_types-number-wrap {
+  position: absolute;
+  z-index: 5;
+  top: -15rem;
+  left: -15rem;
+  width: 85rem;
+  height: 85rem;
+  border-radius: 50%;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%) 100%;
+  box-shadow: 0 0 29rem #da7b7d; }
+
+.pergolas_types-number {
+  font: 700 35rem/80rem Gilroy, sans-serif;
+  display: block;
+  width: 80rem;
+  background: #ffffff;
+  border-radius: 50%; }
+
+.pergolas_types-img {
+  width: 416rem;
+  margin: 0 0 22rem; }
+
+.pergolas_types-text {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f; }
+
+.pergolas_advantages {
+  padding: 314rem 0 0; }
+
+.pergolas_advantages-wrap {
+  margin: -110rem 0 0;
+  padding: 0 0 200rem; }
+
+.pergolas_advantages-header {
+  font: 700 200rem/242rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  opacity: 0.05; }
+
+.pergolas_advantages-img {
+  width: 454rem;
+  margin: 0 115rem; }
+
+.pergolas_advantages-list {
+  width: 735rem; }
+
+.pergolas_advantages-list-title {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 34rem; }
+
+.pergolas_advantages-list-item {
+  position: relative;
+  font: 700 18rem/29rem Gilroy, sans-serif;
+  padding: 0 0 0 33rem;
+  color: #7b7b7b;
+  margin: 0 0 15rem; }
+
+.pergolas_advantages-list-item:last-child {
+  margin: 0; }
+
+.pergolas_advantages-list-item::before {
+  position: absolute;
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  top: 10rem;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.pergolas_options {
+  margin: 101rem 0 0; }
+
+.pergolas_options-header {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  margin: 0 0 51rem; }
+
+.pergolas_options-wrap {
+  margin: 0 0 30rem; }
+
+.pergolas_options-item {
+  position: relative;
+  font: 400 18rem/29rem Gilroy, sans-serif;
+  color: #7b7b7b;
+  width: 480rem;
+  height: 65rem;
+  padding: 0 0 0 77rem;
+  margin: 0 0 30rem;
+  box-shadow: 0 4rem 50rem rgba(0, 0, 0, 0.05);
+  border-radius: 94rem; }
+
+.pergolas_options-item::before {
+  position: absolute;
+  content: "";
+  width: 19rem;
+  height: 19rem;
+  top: 50%;
+  left: 36rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: linear-gradient(132.4deg, #cf6477 6.78%, #ffc592 93.24%); }
+
+.pergolas_options-about {
+  margin: 0 0 77rem; }
+
+.pergolas_options-about-item {
+  position: relative;
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f;
+  width: 352rem;
+  height: 100rem;
+  padding: 0 0 0 77rem;
+  background: #fafafa; }
+
+.pergolas_options-about-item::before {
+  position: absolute;
+  content: "";
+  width: 30rem;
+  height: 30rem;
+  top: 50%;
+  left: 25rem;
+  transform: translateY(-50%);
+  background: url("../images/elements/check.svg") no-repeat center/contain; }
+
+.pergolas_options-about + .base_btn {
+  margin: 0 auto; }
+
+.wood {
+  position: relative;
+  margin: 0 0 110rem; }
+
+.wood::before {
+  position: absolute;
+  content: "";
+  top: 115rem;
+  left: 0;
+  width: 1560rem;
+  height: 522rem;
+  background: #f9f9f9;
+  border-radius: 0 300rem 0 0; }
+
+.wood_header {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  margin: 0 0 136rem; }
+
+.wood_wrap {
+  margin: 0 0 74rem;
+  position: relative;
+  z-index: 11; }
+
+.wood_text {
+  width: 755rem;
+  margin: 0 100rem 0 0; }
+
+.wood_about {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  margin: 0 0 30rem;
+  color: #2f2f2f; }
+
+.wood_assortment-item {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #4d4d4d;
+  width: 236rem;
+  padding: 13rem 18rem 19rem;
+  margin: 0 14rem 11rem 0;
+  background: #ffffff; }
+
+.wood_img {
+  width: 670rem;
+  border-radius: 170rem 0 0 0;
+  overflow: hidden; }
+
+.wood_types {
+  border-bottom: thin solid #db7b7d;
+  margin: 0 0 85rem; }
+
+.wood_types + .base_btn {
+  margin: 0 auto; }
+
+.wood_types .base_accordeon-btn {
+  margin: 40rem auto 0; }
+
+.wood_types-header {
+  font: 700 50rem/61rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 41rem; }
+
+.wood_types-main {
+  margin: 0 0 10rem; }
+
+.wood_types-main .wood_types-item:not(:last-child) {
+  margin: 0 105rem 0 0; }
+
+.wood_types-title {
+  font: 700 20rem/24rem Gilroy, sans-serif;
+  color: #2f2f2f;
+  margin: 0 0 13rem; }
+
+.wood_types-item {
+  margin: 0 0 25rem; }
+
+.wood_types-img {
+  width: 345rem;
+  border-radius: 7rem;
+  overflow: hidden;
+  margin: 0 30rem 13rem 0; }
+
+.wood_types-img:last-child {
+  margin: 0 0 13rem; }
+
+.wood_types-name {
+  font: 400 18rem/29rem Gilroy, sans-serif;
+  color: #7b7b7b; }
+
+.wood_types-hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out; }
+
+.wood_types-hidden-first {
+  border-bottom: medium solid #efefef;
+  padding: 0 0 10rem; }
+
+.wood_types-hidden-second {
+  padding: 0 0 10rem; }
+
+.wood_types-hidden .wood_types-title {
+  padding: 35rem 0 0; }
+
+.footer_content {
+  margin: 0 0 40rem; }
+
+.footer_subtitle {
+  font: 400 14rem/14rem Gilroy, sans-serif;
+  color: #7b7b7b; }
+
+.footer_title {
+  font: 700 80rem/97rem Cormorant, sans-serif;
+  letter-spacing: 5rem;
+  padding: 0 0 0 5rem;
+  margin: 0 0 60rem; }
+
+.footer_garden {
+  width: 465rem;
+  margin: 0 130rem 0 0;
+  font: 400 18rem/29rem Gilroy, sans-serif;
+  color: #7b7b7b; }
+
+.footer_garden .footer_title {
+  color: green;
+  background: url("../images/grass.jpg") no-repeat center/cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.footer_stone {
+  width: 375rem;
+  margin: 0 130rem 0 0; }
+
+.footer_stone .footer_title {
+  color: #36c1f8;
+  background: url("../images/water.jpg") no-repeat center/cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.footer_wood {
+  width: 365rem; }
+
+.footer_wood .footer_title {
+  color: brown;
+  background: url("../images/wood.jpg") no-repeat center/cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.footer_social-links-icon {
+  display: inline-block;
+  width: 22rem;
+  height: 22rem;
+  fill: #4d4d4d;
+  transition: all 0.2s linear;
+  margin: 0 5rem 0 0; }
+
+.footer_social-links-icon:hover {
+  fill: url(#my-cool-gradient) #447799; }
+
+.footer_garden address {
+  font-style: normal;
+  margin: 0 0 10rem; }
+
+.footer_address {
+  margin: 0 0 8rem; }
+
+.footer_mail a {
+  color: #7b7b7b; }
+
+.footer_mail span,
+.footer_social-links-title,
+.footer_phones,
+.footer_working-hours-title {
+  font-weight: 700;
+  color: #4d4d4d; }
+
+.footer_phones-item {
+  display: block;
+  font-size: 32rem;
+  line-height: 38rem;
+  color: #4d4d4d; }
+
+.footer_social-links {
+  width: 190rem;
+  padding: 0 0 30rem;
+  margin: 0 0 17rem;
+  border-bottom: thin solid #00cdc8; }
+
+.footer_social-links-title,
+.footer_phones-title {
+  margin: 0 0 10rem; }
+
+.footer_phones {
+  margin: 0 0 15rem; }
+
+.footer_working-hours-title {
+  margin: 0 15rem 0 0; }
+
+.footer_working-hours-info {
+  width: 270rem; }
+
+.footer_stone-text {
+  font: italic 400 30rem/36rem Cormorant, sans-serif;
+  color: #2f2f2f;
+  margin: 15rem 0; }
+
+.footer_stone-img {
+  width: 270rem;
+  margin: 0 auto;
+  border-radius: 50%; }
+
+.footer_stone .base_btn {
+  position: relative;
+  z-index: 11;
+  margin: -45rem auto 0;
+  background: linear-gradient(132.4deg, #00afcc 6.78%, #00e6c5 93.24%); }
+
+.footer_stone .base_btn:hover {
+  box-shadow: 0rem 9rem 22rem rgba(45, 177, 201, 0.37); }
+
+.footer_insta-item {
+  width: 115rem;
+  margin: 0 3rem 5rem 0; }
+
+.footer_insta-item:nth-child(3n) {
+  margin: 0 0 5rem; }
+
+.footer_copyright {
+  font: 400 16rem/19rem Gilroy, sans-serif;
+  background: #009fb0;
+  padding: 20rem 0; }
+
+.menu_out {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(25, 109, 109, 0.767);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s; }
+
+.menu_in {
+  position: relative;
+  z-index: 101;
+  width: 1920rem;
+  background: #ffffff;
+  opacity: 0;
+  transform: perspective(600rem) translate(0, 100%) rotateX(45deg);
+  transition: all 0.8s ease 0s; }
+
+.menu_out.open {
+  opacity: 1;
+  visibility: visible; }
+
+.menu_out.open .menu_in {
+  opacity: 1;
+  transform: perspective(600rem) translate(0, 0) rotateX(0deg); }
+
+.menu_content {
+  margin: 65rem 0 0;
+  flex-grow: 1;
+  background: url("../images/menu-bg.jpg") no-repeat right; }
+
+.menu_content-main {
+  margin: 0 0 0 125rem; }
+
+.menu_img {
+  width: 745rem; }
+
+.menu_header {
+  width: 520rem;
+  margin: 0 0 100rem; }
+
+.menu_header-logo {
+  margin: 0 0 35rem; }
+
+.menu_header-text {
+  font: 400 22rem/30rem Gilroy, sans-serif;
+  color: #7b7b7b; }
+
+.menu_lists {
+  margin: 0 0 0 15rem; }
+
+.menu_lists-main {
+  font: 700 60rem/73rem Cormorant, sans-serif;
+  width: 465rem; }
+
+.menu_lists-main li,
+.menu_lists-main li a {
+  color: #2f2f2f;
+  transition: all 0.2s linear; }
+
+.menu_lists-main li:hover {
+  padding: 0 0 0 15rem; }
+
+.menu_lists-main li a:hover {
+  color: #00cdc8; }
+
+.menu_lists-main li + li {
+  margin: 35rem 0 0; }
+
+.menu_lists-secondary li a {
+  font: 700 18rem/47rem Gilroy, sans-serif;
+  color: #2f2f2f; }
+
+.menu_lists-secondary li + li {
+  margin: 10rem 0 0; }
+
+.menu_content-footer {
+  background: #f9f9f9;
+  height: 80rem;
+  padding: 0 0 0 140rem; }
+
+.menu_content-footer-title {
+  font: 400 18rem/28rem Gilroy, sans-serif;
+  color: #4d4d4d;
+  margin: 0 40rem 0 0; }
+
+.menu_content-footer-link {
+  font: 400 18rem/28rem Gilroy, sans-serif;
+  color: #7b7b7b;
+  padding: 0 25rem 0 0; }
+
+.close-menu {
+  position: absolute;
+  top: 80rem;
+  right: 100rem;
+  width: 23rem;
+  height: 23rem;
+  cursor: pointer; }
+
+body.lock {
+  overflow: hidden; }

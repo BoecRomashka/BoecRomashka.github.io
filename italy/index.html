@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    
+    <title>Wood</title>
+  </head>
+  <body>
+    <div class="wrapper"><svg style="width: 0; height: 0; position: absolute" aria-hidden="true" focusable="false">
+  <linearGradient id="my-cool-gradient" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00AFCC" />
+    <stop offset="100%" stop-color="#00E6C5" />
+  </linearGradient>
+</svg>
+<svg style="display: none">
+  <symbol id="facebook" viewBox="0 0 512 512">
+    <g>
+      <path
+        d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h192V336h-64v-80h64v-64c0-53.024,42.976-96,96-96h64v80
+              h-32c-17.664,0-32-1.664-32,16v64h80l-32,80h-48v176h96c35.296,0,64-28.704,64-64V64C512,28.704,483.296,0,448,0z"
+      />
+    </g>
+  </symbol>
+</svg>
+<svg style="display: none">
+  <symbol id="instagram" viewBox="0 0 511 511.9">
+    <path
+      d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+    />
+    <path
+      d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+    />
+    <path
+      d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+    />
+  </symbol>
+</svg>
+ <header class="header lock-padding flex_ai-c">
+  <div class="base_container flex_jc-sb_ai-c">
+    <nav class="header_nav flex_jc-sb_ai-c">
+      <a href="#" class="header_nav-logo">
+        <img src="assets/images/logo-sm.png" alt="logo" />
+      </a>
+      <a href="#" class="header_nav-link base_link-garden">JJ Garden</a>
+      <a href="#" class="header_nav-link base_link-stone">JJ Stone</a>
+      <a href="#" class="header_nav-link base_link-wood">JJ Wood</a>
+    </nav>
+    <div class="header_options flex_jc-sb_ai-c">
+      <div class="header_options-phones flex">
+        <a href="#" class="header_options-phone">
+          <span class="header_options-phone-code">+34</span>
+          <span> 608 86 40 07</span>
+        </a>
+        <a href="#" class="header_options-phone">
+          <span class="header_options-phone-code">+34</span>
+          <span> 645 54 49 09</span>
+        </a>
+      </div>
+      <div class="header_options-lang">
+        <a href="#" class="header_options-lang-item active upper">es</a>
+        <a href="#" class="header_options-lang-item upper">cat</a>
+        <a href="#" class="header_options-lang-item upper">ru</a>
+      </div>
+      <a class="flex_ai-c menu">
+        <div class="header_options-menu-text upper">menu</div>
+        <div class="header_options-menu-burger"></div>
+      </a>
+    </div>
+  </div>
+</header>
+ 
+
+
+<section class="main">
+        <div class="base_container">
+            <div class="main_header flex">
+                <div class="main_header-logo">
+                    <img src="assets/images/logo-big.png" alt="logo">
+                </div>
+                <div class="main_header-text">
+                    <div class="flex">
+                        <img src="assets/images/elements/letter_j.png" class="main_header-letter" alt="letter J">
+                        <img src="assets/images/elements/letter_j.png" class="main_header-letter" alt="letter J">
+                        <img src="assets/images/elements/letter_w.png" class="main_header-letter" alt="letter W">
+                        <img src="assets/images/elements/letter_o.png" class="main_header-letter" alt="letter O">
+                        <img src="assets/images/elements/letter_o.png" class="main_header-letter" alt="letter O">
+                        <img src="assets/images/elements/letter_d.png" class="main_header-letter" alt="letter D">
+                    </div>
+                    <div class="main_header-subtitle ta-c">outdoor wood</div>
+                    <h2 class="main_header-title">Ofrecemos diseño de la zona del<br> jardín o terraza con aplicación de<br> elementos de madera para<br> exterior por mejor precio</h2>
+                </div>
+                <div class="main_header-circle">
+                    <div class="main_header-img"></div>
+                    <div class="main_header-out"></div>
+                    <div class="main_header-in"></div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="services">
+        <div class="services_items flex_jc-c">
+            <div class="services_item ta-c flex_col_ai-c">
+                <div class="services_item-img">
+                    <img src="assets/images/apartment01.jpg" alt="product image">
+                </div>
+                <h3 class="services_item-title">Tarima sintética - desde  <span class="color-red">90€/m2 </span> con diseño e instalación</h2>
+                <a href="#" class="base_btn color-white">Pedir presupuesto</a>
+                <a href="#" class="services_item-link color-red">Saber mas</a>
+            </div>
+            <div class="services_item ta-c flex_col_ai-c">
+                <div class="services_item-img">
+                    <img src="assets/images/apartment02.jpg" alt="product image">
+                </div>
+                <h3 class="services_item-title">Pergolas de madera natural</h2>
+                <a href="#" class="base_btn color-white">Pedir presupuesto</a>
+                <a href="#" class="services_item-link color-red">Saber mas</a>
+            </div>
+            <div class="services_item ta-c flex_col_ai-c">
+                <div class="services_item-img">
+                    <img src="assets/images/apartment03.jpg" alt="product image">
+                </div>
+                <h3 class="services_item-title">Madera tratada para exterior</h2>
+                <a href="#" class="base_btn color-white">Pedir presupuesto</a>
+                <a href="#" class="services_item-link color-red">Saber mas</a>
+            </div>
+        </div>
+    <div class="base_container">
+        <div class="services_advantages">
+            <h2 class="services_advantages-title ta-c">Quedarás satisfecho si trabajas con nosotros</h2>
+            <div class="flex_wrap">
+                <p class="services_advantages-text flex_ai-c">
+                    Servicio propio de entrega
+                </p>    
+                <p class="services_advantages-text flex_ai-c">
+                    Presupuesto de material con su instalación sin sorpresas
+                </p> 
+                <p class="services_advantages-text flex_ai-c">
+                    Precios más bajos que ofrecen la mayoría de los proveedores
+                </p> 
+                <p class="services_advantages-text flex_ai-c">
+                    Experiencia en creación de jardines más de 7 años
+                </p> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="base_container">
+    <section class="floor">
+        <h2 class="floor_header color-red upper ta-c">Tarima sintética</h2>
+        <div class="floor_benefits">
+            <div class="flex">
+                <div class="floor_benefits-circle">
+                    <div class="floor_benefits-img"></div>
+                    <div class="floor_benefits-out"></div>
+                    <div class="floor_benefits-in"></div>
+                </div>
+                <div class="floor_benefits-text">
+                    <h3 class="floor_benefits-title">La tarima sintética  <span class="color-red">Supradeck®</span></h3>
+                    <p class="floor_benefits-subtitle">es un material excelente para revestir las superficies de jardín y zonas<br> adyacentes a piscinas</p>
+                    <ul class="floor_benefits-list">
+                        <li>Resistente a la humedad: no se hincha al contacto con el agua, no se descompone y no se seca</li>
+                        <li>Resistente al moho, hongos, insectos y humedad</li>
+                        <li>Resistente a los rayos UV: mantiene su color original bajo la luz directa del sol</li>
+                        <li>Alta resistencia, aguanta altas cargas, es resistente a los arañazos</li>
+                        <li>Antideslizante gracias al tratamiento especial del material</li>
+                        <li>Ecológicamente segura, no emite toxinas</li>
+                        <li>Imitación cercana a la madera natural por su textura y combinación de colores</li>
+                    </ul>
+                    <p class="floor_benefits-services">Diseñamos, suministramos e instalamos</p>                
+                </div>
+            </div>
+            <div class="floor_benefits-result flex_jc-sb">
+                <span>Precioso!</span>
+                <span>Funcional!</span>
+                <span>Espectacular!</span>
+            </div>
+            <div class="floor_benefits-bunner flex_jc-c_ai-c">
+                <p class="floor_benefits-bunner-text ta-r">Solicite la decoración del jardín con tarima sintética de la mejor calidad</p>
+                <a href="#" class="base_btn color-white upper ta-c">encargar</a>
+            </div>
+        </div>
+
+        <div class="floor_samples">
+            <h3 class="floor_samples-header">Lista de tipos y colores</h3>
+            <div class="floor_samples-supradeck">
+                <h4 class="floor_samples-title upper">tarimas supradeck</h4>
+                <div class="flex_wrap">
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample01.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">BLANCO</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample02.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">GRIS CLARO</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample03.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">NEGRO</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample04.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">NEVADO</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample05.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">ANTIQUE</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample06.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">TEKA</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample07.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">TEKA VETEADO</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample08.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">NOGAL VETEADO</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample09.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">MAHOGANY</div>
+                    </div>
+                    <div class="floor_samples-item">
+                        <div class="floor_samples-supradeck-img">
+                            <img src="assets/images/samples/sample10.jpg" alt="Floor Sample Image">
+                        </div>
+                        <div class="floor_samples-name upper">IPE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor_samples-hidden flex_jc-sb" id="floor_accordeon-content">
+                <div>
+                    <h4 class="floor_samples-title upper">TARIMA SINTÉTICA SERIE MAGNUM</h4>
+                    <div class="flex">
+                        <div class="floor_samples-item">
+                            <div class="floor_samples-hidden-img">
+                                <img src="assets/images/samples/sample06.jpg" alt="Floor Sample Image">
+                            </div>
+                            <div class="floor_samples-name upper">TEKA</div>
+                        </div>
+                        <div class="floor_samples-item">
+                            <div class="floor_samples-hidden-img">
+                                <img src="assets/images/samples/sample10.jpg" alt="Floor Sample Image">
+                            </div>
+                            <div class="floor_samples-name upper">IPE</div>
+                        </div>
+                        <div class="floor_samples-item">
+                            <div class="floor_samples-hidden-img">
+                                <img src="assets/images/samples/sample04.jpg" alt="Floor Sample Image">
+                            </div>
+                            <div class="floor_samples-name upper">NEVADO</div>
+                        </div>
+                    </div>                        
+                </div>
+                <div>
+                    <h4 class="floor_samples-title upper">VALLAS SUPRAFENCE</h4>
+                    <div class="flex">
+                        <div class="floor_samples-item">
+                            <div class="floor_samples-hidden-img">
+                                <img src="assets/images/samples/sample06.jpg" alt="Floor Sample Image">
+                            </div>
+                            <div class="floor_samples-name upper">TEKA</div>
+                        </div>
+                        <div class="floor_samples-item">
+                            <div class="floor_samples-hidden-img">
+                                <img src="assets/images/samples/sample10.jpg" alt="Floor Sample Image">
+                            </div>
+                            <div class="floor_samples-name upper">IPE</div>
+                        </div>
+                        <div class="floor_samples-item">
+                            <div class="floor_samples-hidden-img">
+                                <img src="assets/images/samples/sample04.jpg" alt="Floor Sample Image">
+                            </div>
+                            <div class="floor_samples-name upper">NEVADO</div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <button class="base_accordeon-btn" id="floor_accordeon-btn">
+                <img src="assets/images/elements/arrow.svg" id= "floor_arrow" alt="arrow icon">
+            </button>
+        </div>
+
+        <div class="floor_sertificates">            
+            <div class="flex_ai-c">
+                <div class="floor_sertificates-text-wrap">
+                    <h3 class="floor_sertificates-header">Lista de certificados para descarga</h3>
+                    <ul>
+                        <li class="flex_ai-c floor_sertificates-list-item-wrap"><a href="#" class="floor_sertificates-list-link"> Certificados técnicos</a></li>
+                        <li class="flex_ai-c floor_sertificates-list-item-wrap"><a href="#" class="floor_sertificates-list-link"> Test de calidad y resistencia</a></li>
+                        <li class="flex_ai-c floor_sertificates-list-item-wrap"><a href="#" class="floor_sertificates-list-link"> La garantía del producto</a></li>
+                        <li class="flex_ai-c floor_sertificates-list-item-wrap"><a href="#" class="floor_sertificates-list-link"> El certificado antideslizante</a></li>
+                        <li class="flex_ai-c floor_sertificates-list-item-wrap"><a href="#" class="floor_sertificates-list-link"> El certificado electricidad estática en tarimas encapsuladas</a></li>
+                    </ul>
+                </div>
+                <div class="floor_sertificates-img">
+                    <img src="assets/images/sertif.png" alt="Sertificate Image">
+                </div>
+            </div>
+        </div>
+            <div class="floor_standarts flex_wrap_jc-c">
+                <div class="floor_standarts-item flex_ai-c">
+                    <div class="floor_standarts-img">
+                        <img src="assets/images/elements/standart01.png" alt="decorative icon">
+                    </div>
+                    <p class="floor_standarts-text">Fabricado en estados unidos</p>
+                </div>
+                <div class="floor_standarts-item flex_ai-c">
+                    <div class="floor_standarts-img">
+                        <img src="assets/images/elements/standart02.png" alt="decorative icon">
+                    </div>
+                    <p class="floor_standarts-text">100% reciclado y reciclable</p>
+                </div>
+                <div class="floor_standarts-item flex_ai-c">
+                    <div class="floor_standarts-img">
+                        <img src="assets/images/elements/standart03.png" alt="decorative icon">
+                    </div>
+                    <p class="floor_standarts-text">Años de garantía</p>
+                </div>
+                <div class="floor_standarts-item flex_ai-c">
+                    <div class="floor_standarts-img">
+                        <img src="assets/images/elements/standart04.png" alt="decorative icon">
+                    </div>
+                    <p class="floor_standarts-text">100% impermeable</p>
+                </div>
+                <div class="floor_standarts-item flex_ai-c">
+                    <div class="floor_standarts-img">
+                        <img src="assets/images/elements/standart05.png" alt="decorative icon">
+                    </div>
+                    <p class="floor_standarts-text">Forest stewardship council</p>
+                </div>
+            </div>
+            <a href="#" class="base_btn color-white upper ta-c">Enviar solicitud</a>
+    </section>
+</div>
+
+
+<section class="pergolas">
+    <h2 class="pergolas_header color-red upper ta-c">Pergolas de madera natural</h2>
+    <div class="pergolas_about">
+        <div class="base_container">
+            <div class="pergolas_about-content">
+                <h3 class="pergolas_about-title color-white">Pergolas de madera natural</h3>
+                <p class="pergolas_about-text color-white">Pergola de madera natural es un elemento eficaz y práctico de diseño, una parte integral del diseño y complemento perfecto de su jardín o terraza. Da una alta protección contra la luz solar directa, lluvia, viento y polvo, es el soporte ideal para plantas trepadoras</p>
+                <ul>
+                    <li class="pergolas_about-list-item">Hacemos proyectos personalizados</li>
+                    <li class="pergolas_about-list-item">Creamos los modelos 3D para garantizar el resultado</li>
+                    <li class="pergolas_about-list-item">Garantizamos calidad una alta en los prductos fabricados</li>
+                    <li class="pergolas_about-list-item">Completamos la instalación en los plazos acordados</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pergolas_background">
+        <div class="base_container">
+            <div class="pergolas_types flex_jc-c_ai-c">
+                <h3 class="pergolas_types-title">Tipos de pergolas</h3>
+                <div class="pergolas_types-item">
+                    <div class="pergolas_types-number-wrap flex_jc-c_ai-c">
+                        <span class="pergolas_types-number color-red ta-c">01</span>
+                    </div>
+                    <div class="pergolas_types-img">
+                        <img src="assets/images/pergolas03.jpg" alt="pergolas image">
+                    </div>
+                    <p class="pergolas_types-text">Adosadas o independientes</p>
+                </div>
+                <div class="pergolas_types-item">
+                    <div class="pergolas_types-number-wrap flex_jc-c_ai-c">
+                        <span class="pergolas_types-number color-red ta-c">02</span>
+                    </div>
+                    <div class="pergolas_types-img">
+                        <img src="assets/images/pergolas04.jpg" alt="pergolas image">
+                    </div>
+                    <p class="pergolas_types-text">Con toldos motorizados o no</p>
+                </div>
+            </div>
+            <div class="pergolas_advantages">
+                <h3 class="pergolas_advantages-header ta-r upper">Ventajas</h3>
+                <div class="pergolas_advantages-wrap flex_jc-c_ai-c">
+                    <div class="pergolas_advantages-img">
+                        <img src="assets/images/pergolas05.jpg" alt="pergolas image">
+                    </div>
+                    <div class="pergolas_advantages-list">
+                        <h3 class="pergolas_advantages-list-title">Ventajas</h3>
+                        <ul>
+                            <li class="pergolas_advantages-list-item">Materiales naturales para la estructura</li>
+                            <li class="pergolas_advantages-list-item">Toldo de material impermeable</li>
+                            <li class="pergolas_advantages-list-item">Posibilidad de automatizar las pérgolas con accionamiento mecánico o eléctrico</li>
+                            <li class="pergolas_advantages-list-item">Larga vida útil de los materiales con los que se fabrican los toldos de pérgola</li>
+                            <li class="pergolas_advantages-list-item">Madera tratada contra humedad y protegida contra las plagas. Gran durabilidad</li>
+                            <li class="pergolas_advantages-list-item">El techo de la pérgola con una pendiente de 7 grados garantiza la eliminación completa de la humedad de la superficie. La pérgola también se puede equipar con un perfil de drenaje frontal</li>
+                            <li class="pergolas_advantages-list-item">Los materiales de toldo no inflamable de alta calidad fabricados en Europa son 100% resistentes al agua</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="base_container">
+        <div class="pergolas_options">
+            <h3 class="pergolas_options-header ta-c">Posibles opciones para pérgolas</h3>
+            <div class="pergolas_options-wrap flex_wrap_jc-sb">
+                <p class="pergolas_options-item flex_ai-c">Iluminación LED regulable de alta calidad</p>
+                <p class="pergolas_options-item flex_ai-c">Techo corredizo</p>
+                <p class="pergolas_options-item flex_ai-c">Mosquiteras</p>
+                <p class="pergolas_options-item flex_ai-c">Calefacción por infrarrojos en los meses fríos</p>
+                <p class="pergolas_options-item flex_ai-c">Nebulización (enfriamiento por niebla)</p>
+                <p class="pergolas_options-item flex_ai-c">Selección de suelo</p>
+            </div>
+            <div class="pergolas_options-about flex_jc-sb">
+                <p class="pergolas_options-about-item flex_ai-c">Vida útil: 15 años</p>
+                <p class="pergolas_options-about-item flex_ai-c">Tiempo de producción 30-40 días</p>
+                <p class="pergolas_options-about-item flex_ai-c">Te damos una garantía de hasta 3 años</p>
+                <p class="pergolas_options-about-item flex_ai-c">Amplia carta de colores</p>
+            </div>
+            <a href="#" class="base_btn color-white upper ta-c">Enviar solicitud</a>
+        </div>
+    </div>
+</section>
+
+<section class="wood">
+    <h2 class="wood_header color-red ta-c upper">Madera tratada para exterior</h2>
+    <div class="wood_wrap flex_jc-c">
+        <div class="wood_text">
+            <p class="wood_about">
+                Gran variedad de traviesas de tren<br> y madera tratada para exterior!<br>
+                <span class="color-red">Puedes pedirlas a JadeJardi con instalacion</span>
+            </p>
+            <div class="flex_wrap">
+                <p class="wood_assortment-item ta-c">Traviesas de madera</p>
+                <p class="wood_assortment-item ta-c">Celosia</p>
+                <p class="wood_assortment-item ta-c">Jardineras</p>
+                <p class="wood_assortment-item ta-c">Postes</p>
+                <p class="wood_assortment-item ta-c">Vallas</p>
+            </div>
+        </div>
+        <div class="wood_img">
+            <img src="assets/images/wood01.jpg" alt="wood image">
+        </div>
+    </div>
+    <div class="base_container">
+        <div class="wood_types">
+            <h3 class="wood_types-header">Lista de tipos y colores</h3>
+            <div class="wood_types-main flex">
+                <div class="wood_types-item">
+                    <h4 class="wood_types-title">TRAVESSA</h4>
+                    <div class="wood_types-img">
+                        <img src="assets/images/wood/wood02.jpg" alt="wood image">
+                    </div>
+                    <p class="wood_types-name">TRAVIESAS ECOLÓGICAS</p>
+                </div>
+                <div class="wood_types-item">
+                    <h4 class="wood_types-title">TRAVESPASS</h4>
+                    <div class="wood_types-img">
+                        <img src="assets/images/wood/wood03.jpg" alt="wood image">
+                    </div>
+                    <p class="wood_types-name">DESCRIPCIÓN</p>
+                </div>
+            </div>
+            <div class="wood_types-hidden" id="wood_accordeon-content">
+                <h4 class="wood_types-title">TRAVIESAS RECUPERADAS</h4>                
+                <div class="wood_types-hidden-first flex_wrap">
+                <div class="wood_types-item">
+                    <div class="wood_types-img">
+                        <img src="assets/images/wood/wood04.jpg" alt="wood image">
+                    </div>
+                    <p class="wood_types-name">TRAVIESAS HAYA EXTRA LARGAS</p>
+                </div>
+                    <div class="wood_types-item">                    
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood05.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">TRAVIESAS HAYA NORMAL</p>
+                    </div>
+                    <div class="wood_types-item">                    
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood06.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">TRAVIESAS HAYA EXTRA</p>
+                    </div>
+                    <div class="wood_types-item">
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood07.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">TRAVIESAS HAYA EXTRA EXTRA</p>
+                    </div>
+                </div>
+
+                <h4 class="wood_types-title">MADERA TRATADA</h4>
+                <div class="wood_types-hidden-second flex_wrap">
+                    <div class="wood_types-item">
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood08.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">JARDINERAS DE MADERA</p>
+                    </div>
+                    <div class="wood_types-item">                        
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood09.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">POSTES CIRCULARES</p>
+                    </div>
+                    <div class="wood_types-item">                        
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood10.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">TUTORES</p>
+                    </div>
+                    <div class="wood_types-item">                        
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood11.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">POSTES CUADRADOS</p>
+                    </div>
+                    <div class="wood_types-item">                        
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood12.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">TRAVESAÑOS</p>
+                    </div>
+                    <div class="wood_types-item">                        
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood13.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">VAYA CLÁSICA</p>
+                    </div>
+                    <div class="wood_types-item">                        
+                        <div class="wood_types-img">
+                            <img src="assets/images/wood/wood14.jpg" alt="wood image">
+                        </div>
+                        <p class="wood_types-name">LAMAS</p>
+                    </div>
+                </div>
+            </div>
+            <button class="base_accordeon-btn" id="wood_accordeon-btn">
+                <img src="assets/images/elements/arrow.svg" id= "wood_arrow" alt="arrow icon">
+            </button>
+        </div>
+        <a href="#" class="base_btn color-white upper ta-c">Enviar solicitud</a>
+    </div>
+
+</section>
+
+
+ <footer>
+  <!-- <div class="base_container"> -->
+  <div class="footer_content flex_jc-c">
+    <div class="footer_garden">
+      <p class="footer_subtitle ta-c">Creamos jardines de ensueño</p>
+      <h3 class="footer_title">JJ GARDEN</h3>
+      <address>
+        <p class="footer_address">Barcelona, Sabadell, 08203, Carrer del Pare Fita, 76</p>
+        <p class="footer_mail">
+          <span>E-mail:</span>
+          <a href="#">order@jadejardi.com</a>
+        </p>
+      </address>
+      <div class="footer_social-links">
+        <p class="footer_social-links-title">Redes sociales:</p>
+        <a href="#">
+          <svg class="footer_social-links-icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#facebook"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="footer_social-links-icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#instagram"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer_phones">
+        <p class="footer_phones-title">El telefono:</p>
+        <a href="#" class="footer_phones-item">+34 608 86 40 07</a>
+        <a href="#" class="footer_phones-item">+34 645 54 49 09</a>
+      </div>
+      <div class="footer_working-hours flex">
+        <p class="footer_working-hours-title">Horas&nbsp;de&nbsp;trabajo:</p>
+        <p class="footer_working-hours-info">de lunes a jueves de 9:00 a 17:00 viernes de 9:00 a 13:00</p>
+      </div>
+    </div>
+    <div class="footer_stone">
+      <p class="footer_subtitle ta-c">Piedra natural</p>
+      <h3 class="footer_title">JJ STONE</h3>
+      <p class="footer_stone-text ta-c">¿Hay preguntas?</p>
+      <div class="footer_stone-img">
+        <img src="assets/images/eugenia.jpg" alt="Consultant Photo" />
+      </div>
+      <a href="#" class="base_btn color-white upper ta-c">Escribir a Eugenia</a>
+    </div>
+    <div class="footer_wood">
+      <p class="footer_subtitle ta-c">Madera para exterior</p>
+      <h3 class="footer_title">JJ WOOD</h3>
+      <div class="footer_insta flex_wrap">
+        <a class="footer_insta-item">
+          <img src="assets/images/footer01.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer02.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer03.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer04.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer05.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer06.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer07.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer08.jpg" alt="Instagram Photo" />
+        </a>
+        <a class="footer_insta-item">
+          <img src="assets/images/footer09.jpg" alt="Instagram Photo" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer_copyright color-white ta-c">Copyright 2020</p>
+  <!-- </div> -->
+</footer>
+</div>
+    <div class="menu_out lock-padding flex_jc-c_ai-c">
+        <div class="menu_in flex">
+            <!-- <div class="menu_wrap flex"> -->
+                <div class="menu_img">
+                    <img src="assets/images/menu.jpg" alt="decorative image">
+                </div>
+                <div class="menu_content flex_col_jc-sb">
+                    <div class="menu_content-main">
+                        <div class="menu_header">                    
+                            <div class="menu_header-logo">
+                                <img src="assets/images/menu-logo.png" alt="decorative image">
+                            </div>
+                            <p class="menu_header-text">Diseño de un paisaje único desde los primeros croquis hasta la implementación del proyecto</p>
+                        </div>
+                        <div class="menu_lists flex">
+                            <ul class="menu_lists-main">                            
+                                <li><a href="https://www.google.com.ua/">Home</a></li>
+                                <li><a href="#">JJ Garden</a></li>
+                                <li><a href="#">JJ Stone</a></li>
+                                <li><a href="#">JJ Wood</a></li>
+                            </ul>
+                            <ul class="menu_lists-secondary">
+                                <li><a href="#">Reforma de un jardín</a></li>
+                                <li><a href="#">Césped artificial</a></li>
+                                <li><a href="#">Proyectos</a></li>
+                                <li><a href="#">Desarrollo de proyectos</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contactos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <footer class="menu_content-footer flex_ai-c">
+                        <!-- <div class="menu_footer-content flex"> -->
+                            <div class="menu_content-footer-title">Redes sociales:</div>
+                            <a href="#" class="menu_content-footer-link">Instagram</a>
+                            <a href="#" class="menu_content-footer-link">Facebook</a>
+                        <!-- </div> -->
+                    </footer>
+                    <img src="assets/images/elements/Close.png" class="close-menu" alt="close sign"></img>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>    <script src="assets/js/app.js"></script>
+  </body>
+</html>
