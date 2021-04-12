@@ -1252,6 +1252,7 @@ html {
   position: relative;
   z-index: 101;
   width: 1920rem;
+  max-height: 100vh;
   background: #ffffff;
   opacity: 0;
   transform: perspective(600rem) translate(0, 100%) rotateX(45deg);
